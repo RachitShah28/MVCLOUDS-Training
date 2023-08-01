@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="Wrapper">
+        <div class="border">
+
+        <div class="Heading">
+            <h2>Create Account</h2>
+        </div>
+        <div class="form-container">
+            <form action="#">
+                <div class="two-side">
+                    <div class="half-width">
+                        <label for="Fname">First name</label>
+                        <input type="text" name="Fname" id="Fname" placeholder="Enter First Name">
+                    </div>
+                    <div class="half-width">
+                        <label for="Lname">Last name</label>
+                        <input type="text" name="Lname" id="Lname" placeholder="Enter Last Name">
+                    </div>
+                </div>
+                
+                <div class="two-side email">
+                    <label for="mail">Email*</label> 
+                    <input type="email" name="mail" id="mail" placeholder="Enter  your email id">
+                </div>
+
+                <div class="two-side">
+                    <div class="half-width">
+                        <label for="pass">Password*</label>
+                        <input type="password" name="pass" id="pass" placeholder="Enter Your pass">
+                    </div>
+
+                    <div class="half-width">
+                        <label for="Apass">Confirm Password*</label>
+                        <input type="password" name="Apass" id="Apass" placeholder="Enter your pass again">
+                    </div>
+                    
+                </div>
+                <div class="two-side">
+                    <div class="gender-info half-width">
+                        <span>Gender:</span>
+                       
+                        <input type="radio" name="G1" id="G1">
+                        <label for="G1">Male</label>
+
+                        
+                        <input type="radio" name="G1" id="G1">
+                        <label for="G1">Female</label>
+                    </div>
+                    <div class="gender-info half-width" >
+                        <span>Hobbies</span>
+                        <input type="checkbox" name="H1" id="H1">
+                        <label for="H1">Music</label>
+
+                        <input type="checkbox" name="H2" id="H2">
+                        <label for="H2">Sports</label>
+
+                        <input type="checkbox" name="H3" id="H3">
+                        <label for="H3">Travel</label>
+
+                        <input type="checkbox" name="H4" id="H4">
+                        <label for="H4">Music</label>
+
+                    </div>
+                </div>
+
+                <div class="two-side">
+                    <div class="half-width">
+                        <label for="Income">Source Of Income</label>
+                        <br>
+                        <select name="V1" id="Income">
+                        <option value="V1">Employed</option>
+                        <option value="V1">Bussiness</option>
+                        <option value="V1">Student</option>
+                        <option value="V1">Teacher</option>
+                        <option value="V1">Other</option>
+                        </select>
+                    </div>
+                    <div class="half-width">
+                        <label for="income2">Income</label>
+                        <br>
+                        <input type="range" name="income2" id="income2" min="20" max="2000" step="10">
+                        <span>20k</span>
+                    </div>
+                    
+                </div>
+                <div class="two-side">
+                    <div class="half-width">
+                        <label for="file">Upload Profile Picture</label>
+                        <input type="file" name="file" id="file ">
+                    </div>
+                    <div class="half-width">
+                        <label for="age">Age</label>
+                        <br>
+                        <input type="number" name="age" id="age">
+                    </div>
+                </div>
+
+                <div class="two-side Bio">
+                    <label for="bio">Bio</label>
+                    <textarea name="bio" id="bio" cols="30" rows="5"></textarea>
+                </div>
+
+                <div class="btn">
+                    <button>Create</button>
+                </div>
+            </form>
+        </div>
+
+        </div>
+    </div>
+</body>
+</html>

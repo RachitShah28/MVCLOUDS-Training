@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+}
+
+#Wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: ; */
+    min-height: 100vh;
+    width: 50%;
+    /* border: 2px solid black; */
+    margin: 0 auto;
+}
+.border{
+    border: 15px solid rgb(84,124,142);
+    padding:12px;
+    /* display:     flex;
+    flex-direction: column; */
+    width: 80vw;
+}
+.Heading{
+    font-weight: bold;
+    background-color: rgb(238,240,242);
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+}
+.Heading h2{
+    font-size: 40px;
+}
+.two-side{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content:space-between;
+    margin: 25px auto; 
+}
+label , span{
+    color: rgb(79,197,169);
+    /* font-weight: bold; */
+}
+
+.email{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    align-items:flex-start;
+    width: 80%;
+}
+.email input{
+    width: 100%;
+}
+.gender-info span {
+    display: block;
+}
+.gender-info label{
+    color: black;
+}
+
+.half-width{
+    width: 50%;
+}
+.Bio{
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.Bio textarea{
+    width: 100%;
+}
+
+.btn{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgb(238,240,242);
+    padding-right: 100px;
+    height: 45px;
+}
+.btn button{
+    height: 30px;
+    background-color: rgb(79,197,169);
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
+    border: none;
+}
+.btn button:hover{
+    cursor: pointer;
+}
+
+::placeholder{
+    opacity: 0.4;
+}

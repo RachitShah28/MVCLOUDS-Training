@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="conatiner">
+        <h3>Validation Form</h3>
+        <form action="" class="form1">
+
+            <!-- Name -->
+            <div class="data">
+                <label for="name">Enter Your Name</label>
+            <input type="text" name="name" id="name" required>
+            </div>
+            
+
+            <!-- Phone number -->
+            <div class="data">
+                <label for="phone">Enter Your Phone</label>
+                <input type="tel" name="phone" id="phone" required>
+            </div>
+            
+
+            <!-- Email Id -->
+            <div class="data">
+                <label for="mail">Enter Your Email</label>
+                <input type="email" name="mail" id="mail" pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required >
+            </div>
+            
+
+            <!-- Message -->
+            <div class="data text-area">
+                <label for="msg">Enter Your message</label>
+                <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Write Your message" style="font-size: larger;" required></textarea>
+    
+            </div>
+
+            <div class="data">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username">
+            </div>
+           
+            <div class="data">
+                <label for="pass">Password</label>
+                <input type="password" name="pass" id="pass">
+            </div>
+
+            <div class="data">
+                <label for="G1">Male</label>
+                <input type="radio" name="G1" id="G1">
+
+                <label for="G1">Female</label>
+                <input type="radio" name="G1" id="G1">
+            </div>
+
+            <div class="data">
+                <label for="languages">Dropdown Menu</label>
+                <select name="V1" id="languages">
+                <option value="V1">Java</option>
+                <option value="V1">Python</option>
+                <option value="V1">C</option>
+                <option value="V1">CSS</option>
+
+                </select>
+            </div>
+
+
+            <!-- Submit button -->
+            <div class="data">
+                <input type="button" value="Submit" class="btn" onclick="ans()">
+            </div>
+            
+
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

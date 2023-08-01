@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+#Wrapper{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h3{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
+}
+th ,td{
+    text-align: center;
+    font-size: 2rem;
+    padding: 0.7rem;
+}
+.lunch{
+    font-weight: bold;
+}

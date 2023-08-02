@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        
+            <form action="" name="myForm">
+
+                <div class="heading">
+                    <!-- <img src="./Images/1logo.webp" alt=""> -->
+                    <div class="blue-bg">1</div>
+                    <h3>Candidate Info</h3>
+                </div>
+
+                <div>
+                    <!-- name -->
+                    <input type="text" name="Yname" id="Yname" placeholder="Your Name*" required class="a">
+                </div>
+                
+                <div>
+                    <!-- email -->
+                <input type="email" name="mail" id="mail" placeholder="Your Email*" 
+                pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" class="a" required >
+                </div>
+                
+                <div>
+                    <!-- About yourself -->
+                <textarea name="about" id="about" cols="30" rows="3" placeholder="About Yourself"></textarea>
+                </div>
+                
+               <div class="Interests">
+                 <!-- Interests -->
+                <label for="Interests">Interests:</label>
+                    <select name="" id="Interests">
+                        <option value="I1">Web development</option>
+                        <option value="I1">App development</option>
+                        <option value="I1">Ios development</option>
+                        <option value="I1">Salesforce</option>
+                        
+                    </select>
+               </div> 
+                    
+                    <div class="heading">
+                        <!-- <img src="./Images/2image.png" alt=""> -->
+                        <div class="blue-bg">2</div>
+                        <h3>Additional Info</h3>
+                    </div>
+
+
+                    <div>
+                        <textarea name="school" id="school" cols="30" rows="2" placeholder="About Your School"></textarea>
+                    </div>
+
+                    <div>
+                        <input type="button" value="Submit" class="btn" onclick="ans()">
+                    </div>
+            </form>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>

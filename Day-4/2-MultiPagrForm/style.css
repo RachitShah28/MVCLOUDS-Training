@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+input{
+    outline: none;
+}
+#wrapper{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(76,76,76);
+}
+.welcome-page , .confirm-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 1080px;
+    width: 100%;
+    height: 100%;
+}
+
+.content-box{
+    border: 2px solid rgb(15,158,165);
+    padding: 3rem;
+    background-color: rgb(50,50,50);
+    /* box-shadow: 5px 5px 5px 5px rgb(15,158,165); */
+}
+.content-box h3{
+    display: flex;
+    justify-content: center;
+    padding: 0.2rem;
+    font-size: 4rem;
+    color: rgb(15,158,165);
+}
+.content-box p{
+    color: white;
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+.buttons a{
+    width: 100%;
+    /* background: #000; */
+    text-align: center;
+    
+}
+
+.btn{
+    background-color:rgb(15,158,166);
+    color: white;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 5%;
+    width: 70%;
+    font-size: 1.5rem;
+}
+
+.btn:hover{
+    /* box-shadow:  5px 5px 5px 5px rgb(15,158,165); */
+    cursor: pointer;
+}
+/* Login info */
+
+
+.login-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 1080px;
+    width: 100%;
+    height: 100%;
+}
+
+.login-content-box{
+    border: 2px solid rgb(15,158,165);
+    padding: 3rem;
+    width: 40vw;
+    background-color: rgb(50,50,50);
+    box-shadow: 5px 5px 5px 5px rgb(15,158,165);
+}
+
+.login-h{
+    background-color: rgb(76,76,76);
+    width: 100%;
+}
+.login-h h3{
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    width: 100%;
+    font-size: 4rem;
+    color: rgb(15,158,165);
+    margin-top: -1.5rem;
+ 
+}
+.login-details{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.email1 , .password1 , .name{
+    margin: 1rem;
+}
+.email1 , .password1 , .name i{
+    color: white;
+    font-size: 1.5rem;
+    /* margin-top: 18px; */
+}
+.email1 input{
+    padding: 0.2rem;
+    width: 90%;
+    height: 2rem;
+    font-size: 1.3rem;
+    /* margin-top: 10px; */
+}
+.password1 input{
+    padding: 0.2rem;
+    width: 91%;
+    height: 2rem;
+    font-size: 1.3rem;  
+}
+.name input{
+    padding: 0.2rem;
+    width: 91%;
+    height: 2rem;
+    font-size: 1.3rem;  
+}
+.forget-pass , .member{
+    color: white;
+    margin-left: 1rem;
+    /* margin-top: -1rem; */
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+.btn-login{
+    width: 100%;
+    padding: 0.6rem;
+}
+.sign-up-login{
+    margin-top: 3rem;
+}
+.btn-sign-up{
+    width: auto;
+    margin-left: 1rem;
+}
+
+.Register-btn{
+    width: 30vw;
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+}
+.confirm-p{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.confirm-a{
+    /* height: 100%;
+    width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.confirm-btn{
+        /* display: flex; */
+        width: 20vw;
+        align-items: center;
+       
+}

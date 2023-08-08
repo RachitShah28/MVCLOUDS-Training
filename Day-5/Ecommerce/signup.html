@@ -1,58 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="auth.css">
-</head>
-<body>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Amazon Sign up</title>
+    <link rel="stylesheet" href="signIn.css">
+  </head>
+  <body>
+      <form action="signIn.html">
+        <div id="signInBorder">
+          <p id="SignInTxt">
+            Sign up
+          </p>
+    
+          <label>
+            <strong>Email (phone for mobile accounts)</strong>
+            <br>
+            <input type="email" name="email" value="" required>
+          </label>
+    
+          <br>
+    
+          <label>
+            <strong>Password</strong>
+          
+            <input type="password" name="password" value="" required>
+          </label>
+    
+          <div>
+            <a href="signIn.html"> <input type="submit" value="Sign up" id="amazon"></a>
+           
+            <!-- <button id="amazon">Sign up</button> -->
+          </div>
+    
+    
+        </div>
+    
+      <!-- <hr id="footer"> -->
+    
+      <div class="extra">
+        <p class="links"><a href="#" id="first">Conditions of Use</a>
+        <a href="#">Notice of Use</a>
+        <a href="#">Help</a></p>
+        <p class="links" id="special">
+          © 1996-2016, Amazon.com, Inc. or its affiliates
+        </p>
+      </div>
 
-    <form action="login.html"  name="register-form"onsubmit="signup(event)">
-
-
-        <div id="wrapper">
-            <div class="login-page">
-                <div class="login-content-box">
-                    <div class="login-h">
-                        <h3>Registration form</h3>
-                    </div>
-        
-                    <div class="login-details">
-                        <div class="name">
-                            <i class="fa-solid fa-user"></i>
-                            <input type="text" name="name" id="name" placeholder="Enter Your Name" class="nameform" required>
-                        </div>
-                        <div class="email1">
-                            <i class="fa-solid fa-envelope"></i>
-                            <input type="email" name="mail" id="mail" placeholder="Enter Your Email" class="emailform" required>
-                        </div>
-                       
-                        <div class="password1">
-                            <i class="fa-solid fa-lock"></i>
-                            <input type="password" name="pass" id="pass" placeholder="Enter Your Password" class="passwordform" required>
-                        </div>
-                        <div class="password1">
-                            <i class="fa-solid fa-lock"></i>
-                            <input type="password" name="A-pass" id="A-pass" placeholder="Enter Your Password Again" class="passwordform" required>
-                        </div>
-                        <a href="#">
-                             <input type="submit" value="Register" class="btn btn-login Register-btn">
-                        </a>
-                       
-                    </div>
-                </div>
-            </div>
-        
-           </div>
-        
-
-    </form>
-   
-
-   <script src="https://kit.fontawesome.com/94f511b59c.js" crossorigin="anonymous"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
-    <script src="auth.js" type="module"></script>
-</body>
+      </form>
+    
+      <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-auth-compat.js"></script>
+        <script src="firebase.js" type="module"></script>
+        <script src="signUp.js"></script>
+  </body>
 </html>

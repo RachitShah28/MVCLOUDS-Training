@@ -186,6 +186,9 @@ body {
     font-size: 1.1rem;
     display: flex;
 }
+.cart-container a{
+    color: white;
+}
 
 .cart-container i {
     font-size: 1rem;
@@ -394,6 +397,12 @@ body {
     overflow: auto;
     padding-bottom: 100px;
 }
+.amazone-btn a{
+    color: white;
+    text-decoration: none;
+    margin: 3px;
+    /* background-color: rgb(235,160,94); */
+}
 
 /*product card container*/
 .main{
@@ -560,3 +569,20 @@ body {
     outline: none;
     background-color: rgb(255,255,255,0.4);
 }
+
+/* .container2{
+    display: flex;
+    width: 70%;
+    margin-bottom: 30px;
+}
+
+#root{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+}
+
+.sidebar{
+    width: 40%;
+} */

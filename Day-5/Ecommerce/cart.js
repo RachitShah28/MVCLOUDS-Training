@@ -145,6 +145,7 @@ let removeItem = (id) => {
   generateCartItems();
   TotalAmount();
   localStorage.setItem("data", JSON.stringify(basket));
+  calculation();
 };
 
 let clearCart = () => {

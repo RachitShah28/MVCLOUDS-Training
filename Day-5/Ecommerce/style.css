@@ -191,7 +191,12 @@ body {
 }
 
 .cart-container i {
-    font-size: 1rem;
+   
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 /**************************************navigation*****************************************/

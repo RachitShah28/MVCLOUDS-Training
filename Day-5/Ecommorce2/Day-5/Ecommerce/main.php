@@ -8,10 +8,12 @@
     <title>Amazon</title>
 
     <link rel="stylesheet" href="style.css" />
-
-    <script src="https://kit.fontawesome.com/94f511b59c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <style>
+    <script src="https://kit.fontawesome.com/94f511b59c.js" crossorigin="anonymous"></script>
+
+<style>
+
         /**
 * ! Changing default styles of the browser
 **/
@@ -58,11 +60,12 @@ a {
 }
 
 .cartAmount {
+  outline: none;
   position: absolute;
-  top: -12px;
-  right: 60px;
+  top: -21px;
+    right: -9px;
   font-size: 1.5rem;
-  /* background-color: black; */
+  /* background-color: red; */
   color: white;
   padding: 3px;
   border-radius: 3px;
@@ -199,8 +202,8 @@ a {
   padding: 3px 6px;
 }
 
-    </style>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</style>
+
 </head>
 
 <body>
@@ -238,6 +241,9 @@ a {
                 </div>
             </div>
 
+            
+
+            
             <div class="login-container border-white">
                 <p>Hello,<span>sign in</span></p>
                 <p class="account">Account & Lists</p>
@@ -248,23 +254,25 @@ a {
                 <div class="order">& Orders</div>
                 </p>
             </div>
-            <a href="cart.html">
-                <div class="cart-container border-white cart">
+
+            <div class="cart-container">
+                <a href="cart.html">
+                <div class="cart-container  cart">
+                <!-- <p>Cart</p> -->
                     <i class="fa-solid fa-cart-shopping"></i>
-                    Cart  <div id="cartAmount" class="cartAmount">0</div>
+                       <div id="cartAmount" class="cartAmount">0</div>
                 </div>
-            </a>
-            
+                </a>
+            </div>
 
             <!-- <div class="amazone-btn">
                 <a href="#">Login</a>
             </div>
             <div class="amazone-btn">
-                <a href="#">Sign up</a>
-            </div> -->
+                <a href="#">Sign up</a> -->
+            </div>
         </div>
     </header>
-
     <!--navigation-->
     <nav class="nav">
         <div class="container container-nav">
@@ -390,6 +398,8 @@ a {
             </div>
         </div>
     </section>
+
+ 
 
 
     <!--product container card-->
@@ -608,6 +618,8 @@ a {
             </div>
         </div>
 
+
+
     
     <!--today's deals -->
     <section class="today_deals_container">
@@ -631,8 +643,11 @@ a {
                     <img src="https://m.media-amazon.com/images/I/411mbYGYIdL._AC_SY200_.jpg"/>
                     <div class="discount_Contaienr">
                         <a href="#">Up to 52% off</a>
-                        <button class="add-to-cart-btn" id="1">
-                            <p>Read more</p>
+                        <!-- <a href="#" class="price-tag">5000 </a> -->
+                        <!-- <p class="price-tag">5000</p>
+                        <a href="#" id="cart">Add to cart</a> -->
+                        <button id="inc">
+                            Read more
                         </button>
                        
                     </div>
@@ -643,9 +658,12 @@ a {
                     <img src="https://m.media-amazon.com/images/I/411mbYGYIdL._AC_SY200_.jpg"/>
                     <div class="discount_Contaienr">
                         <a href="#">Up to 52% off</a>
-                        <button class="add-to-cart-btn" id="2" onclick="increment()">
-                            <p>Read more</p>
+                        <!-- <p class="price-tag">7000</p>
+                        <a href="" id="cart">Add to cart</a> -->
+                        <button id="inc">
+                            Read more
                         </button>
+                        
                     </div>
                     <p>adidas and Campus Footwear</p>
                 </div>
@@ -654,9 +672,12 @@ a {
                     <img src="https://m.media-amazon.com/images/I/411mbYGYIdL._AC_SY200_.jpg"/>
                     <div class="discount_Contaienr">
                         <a href="#">Up to 52% off</a>
-                        <button class="add-to-cart-btn" id="3" onclick="increment()">
-                            <p>Read more</p>
+                        <!-- <p class="price-tag">9000</p>
+                        <a href="#" id="cart">Add to cart</a> -->
+                        <button id="inc">
+                            Read more
                         </button>
+                        
                     </div>
                     <p>adidas and Campus Footwear</p>
                 </div>
@@ -665,9 +686,12 @@ a {
                     <img src="https://m.media-amazon.com/images/I/411mbYGYIdL._AC_SY200_.jpg"/>
                     <div class="discount_Contaienr">
                         <a href="#">Up to 52% off</a>
-                        <button class="add-to-cart-btn" id="4" onclick="increment()">
-                            <p>Read more</p>
+                        <!-- <p class="price-tag">8000</p>
+                        <a href="#" id="cart">Add to cart</a> -->
+                        <button id="inc">
+                            Read more
                         </button>
+                        
                     </div>
                     <p>adidas and Campus Footwear</p>
                 </div>
@@ -676,24 +700,31 @@ a {
                     <img src="https://m.media-amazon.com/images/I/411mbYGYIdL._AC_SY200_.jpg"/>
                     <div class="discount_Contaienr">
                         <a href="#">Up to 52% off</a>
-                        <button class="add-to-cart-btn" id="5" onclick="increment()">
-                            <p>Read more</p>
-                            
+                        <!-- <p class="price-tag">5000</p>
+                        <a href="#" id="cart">Add to cart</a> -->
+                        <button id="inc">
+                            Read more
                         </button>
+                        
                     </div>
                     <p>adidas and Campus Footwear</p>
                 </div>
             </div>
         </div>
-    </section>
 
+       
+    </section>
 
     <div class="shop" id="shop">
 
 
-    </div>
+</div>
+
 
     </main>
+   
+
+    
 
 
 
@@ -703,11 +734,8 @@ a {
 
 
 
-    <!-- <script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script> -->
-
+    <script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
     <script src="script.js"></script>
-    
-    <!-- <script src="cart.js"></script> -->
 </body>
 
 </html>

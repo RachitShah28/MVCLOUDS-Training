@@ -1,25 +1,23 @@
-import java.util.Scanner;
+import java.util.*;
 
-class pattern3{
+ class pattern3 {
     public static void main(String[] args) {
-        // System.out.println("Hii");
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the number of rows and colums");
-        int rows = sc.nextInt();
-        int cols = sc.nextInt();
-        for (int i = 1; i <= rows; i++) {
-            for (int j = 1; j <= cols; j++) {
-                if(i==j && j>4){
-                    System.out.print("*");
-                }
-                else{
+        System.out.println("Enter a number");
+        int a = sc.nextInt();
 
-                }
-                
+        for (int j = 0; j <= a; j++) {
+            for (int i = 0; i <= a - j; i++) {
+                System.out.print(" ");
             }
+            for (int k = 0; k <= a; k++) {
+                if (j == 0 || j == a || k == 0 || k == a) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
         }
     }
-
 }
-
-//Pending   

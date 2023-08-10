@@ -1,28 +1,24 @@
-import java.util.Scanner;
 
-// "Create a function that accepts two arguments:the number of dice
-// rolled, and the outcome of the roll. The function returns the number of
-// possible combinations that could produce that outcome. The number of
-// dice can vary from 1 to 6.
-// Ex.
-// User Input: 3 and 4.
-// Output: 3
-class Dice {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        System.out.println("Enter the number for the dice rolled");
-        int NumberOfDice = sc.nextInt();
-
-        System.out.println("Enter the number for outcome of roll");
-        int Outcome = sc.nextInt();
-
-        System.out.println("You have entered " + NumberOfDice + "Dices");
-        System.out.println("Outcome for it " + Outcome);
-
-
-
-    }
+ class Dice_roll{
+	
+	public static long findWays(int f, int d, int s) {
+		long mem[][] = new long[d + 1][s + 1];
+		mem[0][0] = 1;
+		for(int i=1; i<=d; i++) {
+			for(int j=i; j<=s; j++) {
+				mem[i][j] = mem[i][j-1] + mem[i-1][j-1];
+				if(j-f-1 >= 0)
+					mem[i][j] -= mem[i-1][j-f-1];
+			}
+		}
+		return mem[d][s];
+	}
+	public static void main(String[] args) {
+		System.out.println(findWays(3, 3, 4));
+		// System.out.println(findWays(4, 2, 5));
+		// System.out.println(findWays(4, 3, 5));
+	}
 }
 
-//Pending
+
+// Pending to understand

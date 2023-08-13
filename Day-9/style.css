@@ -9,12 +9,11 @@
     height: 100vh;
     background-color: #FFF3DA;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: absolute;
+    justify-content: center;
+    align-items: center;    
 }
 .circle-1{
-    /* position:sticky; */
+    /* position:absolute; */
     background-color: #96B6C5;
     border: 2px solid black;
     height: 220px;
@@ -26,10 +25,23 @@
     justify-content: center;
     align-items: center;
 }
+.circle-3{
+    /* position:absolute; */
+    background-color: #96B6C5;
+    border: 2px solid black;
+    /* height: 220px;
+    width: 220px; */
+    border-radius: 50%;
+    overflow: hidden;
+    /* display: flex; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 .circle-2{
-    position: absolute;
+    position: absolute;  
     background-color: #DFCCFB;
     border: 2px solid black;
     height: 250px;

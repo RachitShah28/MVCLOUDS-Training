@@ -9,7 +9,7 @@
     height: 100vh;
     background-color: #FFF3DA;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;    
 }
 .circle-1{
@@ -41,7 +41,7 @@
 
 
 .circle-2{
-    position: absolute;  
+    position: fixed;  
     background-color: #DFCCFB;
     border: 2px solid black;
     height: 250px;

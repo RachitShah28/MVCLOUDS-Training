@@ -48,21 +48,28 @@ function onDrop(event) {
         var draggableElement = document.getElementById(id);
         console.log({draggableElement});
         var dropzone = event.target;
-        // console.log(event);
-        dropzone.appendChild(draggableElement);    
+        console.log('-----------------------')
+        console.log(dropzone,'dropzone');
+        console.log('length:---------',$(dropzone).children().length);
+        if($(dropzone).children().length >= 1){
+          alert('Please drop this circle inside the smallest circle!!')
+        }
+        else{
+          dropzone.appendChild(draggableElement);    
          
-        // Clearing data
-          event
-        .dataTransfer
-        .clearData();
-      
-        // var width = $('.circle-2').siblings().css('width') ;
-        // console.log('width1--------',width1)
-        // var w = parseInt(width1, 10) - 30;
-        // console.log('w--------------',w)
-        decrementSize();
-        // $('.circle-2').siblings().attr('style',`width:${width1}px !important`);
-        Creatediv(width1,height1);
+          // Clearing data
+            event
+          .dataTransfer
+          .clearData();
+        
+          // var width = $('.circle-2').siblings().css('width') ;
+          // console.log('width1--------',width1)
+          // var w = parseInt(width1, 10) - 30;
+          // console.log('w--------------',w)
+          decrementSize();
+          // $('.circle-2').siblings().attr('style',`width:${width1}px !important`);
+          Creatediv(width1,height1);
+        }
     } catch (error) {
         console.log('Error in onDrop->',{error});
     }
